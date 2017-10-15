@@ -31,9 +31,13 @@ namespace AgentAspirateur
             List<ObjetAbstrait> newlist = new List<ObjetAbstrait>();
             foreach (ObjetAbstrait o in list)
             {
-                if (o.Position != p)
+                if (o.Position.X != p.X && o.Position.Y !=p.Y)
                 {
                     newlist.Add(o);
+                }
+                else
+                {
+                    Console.WriteLine("l'agent " + this.Nom + " aspire " + this.target.Nom);
                 }
             }
             return newlist;
@@ -43,7 +47,7 @@ namespace AgentAspirateur
             List<ObjetAbstrait> newlist = new List<ObjetAbstrait>();
             foreach (ObjetAbstrait o in list)
             {
-                if (o.Position != p)
+                if (o.Position.X != p.X && o.Position.Y != p.Y)
                 {
                    
                     newlist.Add(o);
@@ -54,6 +58,7 @@ namespace AgentAspirateur
                     {
                         newlist.Add(o);
                     }
+                    Console.WriteLine("l'agent " + this.Nom + " ramasse " + this.target.Nom);
                 }
             }
             return newlist;
@@ -69,6 +74,14 @@ namespace AgentAspirateur
                 while (p.Position.X != target.Position.X || p.Position.Y != target.Position.Y)
                 {
                     p = Deplacement(20, 20, p);
+                }
+                if (target.GetType().Equals(typeof(Poussiere)))
+                {
+                    lista.Add(new Action("aspire"));
+                }
+                else
+                {
+                    lista.Add(new Action("ramasse"));
                 }
             }
           

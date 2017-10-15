@@ -62,6 +62,7 @@ namespace AgentAspirateur
             CoordonneesAbstrait position = new Coordonnees(Hazard.Next(1, DimensionX), Hazard.Next(1, DimensionY));
             ObjetAbstrait p = new Bijoux(String.Format("Bijoux {0}", list.Count), position);
             list.Add(p);
+            
 
 
         }

@@ -1,0 +1,15 @@
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\bin\Debug\AgentAspirateur.exe.config
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\bin\Debug\AgentAspirateur.exe
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\bin\Debug\AgentAspirateur.pdb
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur.csprojResolveAssemblyReference.cache
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\MainWindow.g.cs
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\App.g.cs
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur_MarkupCompile.cache
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur_MarkupCompile.lref
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\MainWindow.baml
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur.g.resources
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur.Properties.Resources.resources
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur.csproj.GenerateResource.Cache
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur.csproj.CoreCompileInputs.cache
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur.exe
+D:\DossierPierre\coursUQAC\IA\AgentAspirateur\AgentAspirateur\obj\Debug\AgentAspirateur.pdb

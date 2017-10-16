@@ -16,6 +16,7 @@ namespace AgentAspirateur
         public Agent agent;
         public List<Capteur> listc = new List<Capteur>();
         public List<ObjetAbstrait> list = new List<ObjetAbstrait>();
+        public int nbtour = 0;
         public Env(int _dimensionX, int _dimensionY)
         {
             
@@ -35,20 +36,28 @@ namespace AgentAspirateur
         }
         public void TourSuivant()
         {
-            
-            if (Hazard.Next(1, 11) >=5)
-            {
-                AjoutePoussiere();
-            }
-            if (Hazard.Next(1, 11) == 1)
-            {
-                AjouteBijoux();
-            }
-           
 
+           for(int i = 0; i < 11; i++)
+            {
+                if (Hazard.Next(1, 11) >= 5)
+                {
+                    AjoutePoussiere();
+                }
+                if (Hazard.Next(1, 11) == 1)
+                {
+                    AjouteBijoux();
+                }
+                
+
+            }
+
+
+
+            nbtour++;
 
 
         }
+
         public  void AjoutePoussiere()
         {
             CoordonneesAbstrait position = new Coordonnees(Hazard.Next(1, DimensionX), Hazard.Next(1, DimensionY));
@@ -81,6 +90,7 @@ namespace AgentAspirateur
         {
             while (amIalive())
             {
+              
                 ObserveEnvironmentWithAllMySensors();
                 UpdateMyState();
                 ChooseAnAction();
@@ -143,6 +153,7 @@ namespace AgentAspirateur
         {
             foreach(Action a in this.agent.lista)
             {
+                Thread.Sleep(1000);
                 if (a.action == "aspire")
                 {
                     list=this.agent.aspire(list,this.agent.Position);

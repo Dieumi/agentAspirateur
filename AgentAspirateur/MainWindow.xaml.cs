@@ -31,7 +31,7 @@ namespace AgentAspirateur
             initPlateau();
             Dessine();
             dt.Start();
-           
+            
             Thread tt = new Thread(App.env.Avance);
             tt.Start();
             Dessine();

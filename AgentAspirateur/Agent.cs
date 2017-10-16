@@ -31,13 +31,13 @@ namespace AgentAspirateur
             List<ObjetAbstrait> newlist = new List<ObjetAbstrait>();
             foreach (ObjetAbstrait o in list)
             {
-                if (o.Position.X != p.X && o.Position.Y !=p.Y)
+                if (o.Position.X != p.X || o.Position.Y !=p.Y)
                 {
                     newlist.Add(o);
                 }
                 else
                 {
-                    Console.WriteLine("l'agent " + this.Nom + " aspire " + this.target.Nom);
+                    Console.WriteLine("l'agent " + this.Nom + " aspire " + o.Nom);
                 }
             }
             return newlist;
@@ -47,7 +47,7 @@ namespace AgentAspirateur
             List<ObjetAbstrait> newlist = new List<ObjetAbstrait>();
             foreach (ObjetAbstrait o in list)
             {
-                if (o.Position.X != p.X && o.Position.Y != p.Y)
+                if (o.Position.X != p.X || o.Position.Y != p.Y)
                 {
                    
                     newlist.Add(o);
